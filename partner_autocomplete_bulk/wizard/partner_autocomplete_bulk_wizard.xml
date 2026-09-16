@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_autocomplete_bulk_wizard" model="ir.ui.view">
+        <field name="name">partner.autocomplete.bulk.wizard.form</field>
+        <field name="model">partner.autocomplete.bulk.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Bulk Partner Autocomplete">
+                <sheet>
+                    <field name="line_ids" nolabel="1">
+                        <list string="Autocomplete Lines" editable="bottom" create="false"
+                            delete="false">
+                            <field name="selected" widget="boolean" />
+                            <field name="partner_name" readonly="1" />
+                            <field name="autocomplete_data_display" widget="text" readonly="1" optional="hide" />
+                        </list>
+                    </field>
+                </sheet>
+                <footer>
+                    <button name="action_autocomplete" string="Autocomplete" type="object"
+                        class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_partner_autocomplete_bulk_wizard" model="ir.actions.act_window">
+        <field name="name">Bulk Partner Autocomplete</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">partner.autocomplete.bulk.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

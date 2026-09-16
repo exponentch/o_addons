@@ -1,0 +1,123 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * partner_autocomplete_bulk
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-16 00:00+0000\n"
+"PO-Revision-Date: 2026-09-16 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.actions.act_window,name:partner_autocomplete_bulk.action_partner_autocomplete_bulk_wizard
+msgid "Bulk Partner Autocomplete"
+msgstr "Auto-complétion en masse des partenaires"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.actions.server,name:partner_autocomplete_bulk.action_bulk_autocomplete_partners
+msgid "Bulk Autocomplete Partners"
+msgstr "Auto-compléter les partenaires en masse"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model,name:partner_autocomplete_bulk.model_partner_autocomplete_bulk_wizard
+msgid "Partner Autocomplete Bulk Wizard"
+msgstr "Assistant d'auto-complétion en masse des partenaires"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model,name:partner_autocomplete_bulk.model_partner_autocomplete_bulk_line
+msgid "Partner Autocomplete Bulk Line"
+msgstr "Ligne d'auto-complétion en masse des partenaires"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model,name:partner_autocomplete_bulk.model_res_partner
+msgid "Contact"
+msgstr "Contact"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_wizard__line_ids
+msgid "Autocomplete Lines"
+msgstr "Lignes d'auto-complétion"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__wizard_id
+msgid "Wizard"
+msgstr "Assistant"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__partner_id
+msgid "Partner"
+msgstr "Partenaire"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__partner_name
+msgid "Partner Name"
+msgstr "Nom du partenaire"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__selected
+msgid "Autocomplete"
+msgstr "Auto-compléter"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__autocomplete_data
+msgid "Autocomplete Data"
+msgstr "Données d'auto-complétion"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,field_description:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__autocomplete_data_display
+msgid "Autocomplete Data (Preview)"
+msgstr "Données d'auto-complétion (Aperçu)"
+
+#. module: partner_autocomplete_bulk
+#: model:ir.model.fields,help:partner_autocomplete_bulk.field_partner_autocomplete_bulk_line__autocomplete_data_display
+msgid "Formatted JSON data for preview purposes."
+msgstr "Données JSON formatées pour l'aperçu."
+
+#. module: partner_autocomplete_bulk
+#: model_terms:ir.ui.view,arch_db:partner_autocomplete_bulk.view_partner_autocomplete_bulk_wizard
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/models/res_partner.py:0
+#, python-format
+msgid "The maximum limit is 80 partners. Please select fewer partners."
+msgstr "La limite maximale est de 80 partenaires. Veuillez en sélectionner moins."
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/models/res_partner.py:0
+#, python-format
+msgid "Please select at least one partner."
+msgstr "Veuillez sélectionner au moins un partenaire."
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/models/res_partner.py:0
+#, python-format
+msgid "No exact matches found for the selected partners."
+msgstr "Aucune correspondance exacte trouvée pour les partenaires sélectionnés."
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/wizard/partner_autocomplete_bulk_wizard.py:0
+#, python-format
+msgid "Please select at least one partner to autocomplete."
+msgstr "Veuillez sélectionner au moins un partenaire à auto-compléter."
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/wizard/partner_autocomplete_bulk_wizard.py:0
+#, python-format
+msgid "Errors occurred during the process:\n\n"
+msgstr "Des erreurs sont survenues durant le processus :\n\n"
+
+#. module: partner_autocomplete_bulk
+#: code:addons/partner_autocomplete_bulk/wizard/partner_autocomplete_bulk_wizard.py:0
+#, python-format
+msgid "API Error for %(key)s %(query)s: %(error)s"
+msgstr "Erreur API pour %(key)s %(query)s : %(error)s"
